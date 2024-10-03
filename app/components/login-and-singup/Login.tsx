@@ -5,12 +5,12 @@ import Input from "./components/Inputs";
 
 export default function Login({ setIsLogin, isLogin }: Iprop) {
   return (
-    <div className="w-full h-full flex">
+    <div className="w-full h-full flex flex-col md:flex-row overflow-hidden">
       <motion.div
         initial={{ x: 600 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.4}}
-        className="h-full  w-[60%] flex flex-col gap-6 justify-center items-center text-dark-blue"
+        className="h-full  md:w-[60%] flex flex-col gap-6 justify-center items-center text-dark-blue"
       >
         <h1 className="md:text-5xl text-xl md:mb-6">Login To Your Account</h1>
 
@@ -25,7 +25,7 @@ export default function Login({ setIsLogin, isLogin }: Iprop) {
         initial={{ x: -1000 }}
         transition={{ duration: 0.4}}
         animate={{ x: 0 }}
-        className=" bg-dark-blue flex flex-col gap-3 text-white  justify-center items-center h-full w-[40%]"
+        className=" bg-dark-blue flex flex-col gap-3 text-white  justify-center items-center h-full md:w-[40%]"
       >
         <p className="md:text-4xl text-xl text-center w-[400px]">New Here?</p>
         <p className=" md:w-[400px] text-center md:leading-7 md:text-[18px] text-[12px]">

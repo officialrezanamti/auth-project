@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Input from "./components/Inputs";
 export default function SignUp({ setIsLogin, isLogin }: Iprop) {
   return (
-    <div className="w-full h-full flex">
+    <div className="w-full h-full flex flex-col md:flex-row overflow-hidden" >
       <motion.div
         transition={{ duration: 0.4 }}
         initial={{ x: 700 }}
         animate={{ x: 0 }}
-        className=" bg-dark-blue flex flex-col gap-3 text-white  justify-center items-center h-full w-[40%] z-40"
+        className=" bg-dark-blue flex flex-col gap-3 text-white  justify-center items-center h-full md:w-[40%] z-40"
       >
         <p className="md:text-4xl text-xl text-center w-[400px]">Welcome Back!</p>
         <p className=" md:w-[400px] text-center md:leading-7 md:text-[18px] text-[12px]">
@@ -28,7 +28,7 @@ export default function SignUp({ setIsLogin, isLogin }: Iprop) {
         transition={{ duration: 0.4}}
         initial={{ x: -700 }}
         animate={{ x: 0 }}
-        className="h-full w-[60%] flex flex-col gap-6 justify-center items-center text-dark-blue pt-10 z-20"
+        className="h-full md:w-[60%] flex flex-col gap-6 justify-center items-center text-dark-blue pt-10 z-20"
       >
         <h1 className="md:text-5xl text-xl">Sign Up </h1>
 
