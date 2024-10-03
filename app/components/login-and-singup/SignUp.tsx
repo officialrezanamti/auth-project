@@ -11,8 +11,8 @@ export default function SignUp({ setIsLogin, isLogin }: Iprop) {
         animate={{ x: 0 }}
         className=" bg-dark-blue flex flex-col gap-3 text-white  justify-center items-center h-full w-[40%] z-40"
       >
-        <p className="text-4xl text-center w-[400px]">Welcome Back!</p>
-        <p className=" w-[400px] text-center leading-7 text-[18px]">
+        <p className="md:text-4xl text-xl text-center w-[400px]">Welcome Back!</p>
+        <p className=" md:w-[400px] text-center md:leading-7 md:text-[18px] text-[12px]">
           Already have an account? Sign in to use Nerd Token.
         </p>
         <button
@@ -30,12 +30,12 @@ export default function SignUp({ setIsLogin, isLogin }: Iprop) {
         animate={{ x: 0 }}
         className="h-full w-[60%] flex flex-col gap-6 justify-center items-center text-dark-blue pt-10 z-20"
       >
-        <h1 className="text-5xl">Sign Up </h1>
+        <h1 className="md:text-5xl text-xl">Sign Up </h1>
 
         <Input name="full-name" placeHolder="Full Name" type="text" />
         <Input name="full-name" placeHolder="Email Address" type="text" />
         <Input name="password" placeHolder="Password" type="password" />
-        <button className="bg-dark-blue text-main w-[40%] py-2 rounded-md hover:text-dark-blue hover:bg-main hover:border-dark-blue border duration-200 ">
+        <button className="bg-dark-blue text-main md:w-[40%] w-[95%] py-2 rounded-md hover:text-dark-blue hover:bg-main hover:border-dark-blue border duration-200 ">
           Sign Up
         </button>
       </motion.div>

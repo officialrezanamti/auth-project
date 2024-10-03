@@ -12,7 +12,7 @@ export default function HomePage() {
     <div className="w-full h-full flex justify-center items-center  ">
       <div className="text-center ">
         <motion.h1
-          className="text-6xl mb-8 flex"
+          className="md:text-6xl text-2xl mb-8 flex"
           initial={{ translateY: -500, opacity: 0 }}
           animate={{ translateY: -10, opacity: 1 }}
           
@@ -28,7 +28,7 @@ export default function HomePage() {
           animate={{ opacity: 1}}
           transition={{ duration: 0.3, delay: .8, type: "tween" }}
         >
-          <Link href="/login" style={{ padding: "8px 30px" }}>
+          <Link href="/login" className="text-sm md:text-[16]" style={{ padding: "8px 30px" }}>
             Lets Start
           </Link>
         </motion.p>
